@@ -1,6 +1,6 @@
 public class Apple extends Fruit {
 
-    public Apple (){
+    public Apple() {
         weight = 1.0f;
     }
 }

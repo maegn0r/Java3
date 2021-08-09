@@ -37,7 +37,7 @@ public class TestClass {
         System.out.println(transformArray(array1));
 
         Integer[] array2 = {
-                1,2,3,4,5,6,7
+                1, 2, 3, 4, 5, 6, 7
         };
         System.out.println(transformArray(array2));
 
@@ -48,11 +48,9 @@ public class TestClass {
 
     }
 
-
-
     // 1. Написать метод, который меняет два элемента массива местами.(массив может быть любого ссылочного типа);
 
-    public static <T> T[] changeIndex (T[] arr2, int index1, int index2){
+    public static <T> T[] changeIndex(T[] arr2, int index1, int index2) {
         T t = arr2[index1];
         arr2[index1] = arr2[index2];
         arr2[index2] = t;
@@ -61,15 +59,13 @@ public class TestClass {
 
     // 2. Написать метод, который преобразует массив в ArrayList;
 
-    public static <T> ArrayList<T> transformArray (T[] arr1){
+    public static <T> ArrayList<T> transformArray(T[] arr1) {
         return new ArrayList<>(Arrays.asList(arr1));
     }
 
-
-    public static <T> void printArray (T[] arr) {
+    public static <T> void printArray(T[] arr) {
         for (T t : arr) {
             System.out.print(t + " ");
         }
     }
-
 }
