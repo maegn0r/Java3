@@ -19,15 +19,15 @@ public class TestClass {
         orangeBox.addToBox(new Orange());
         orangeBox.addToBox(new Orange());
 
-        System.out.println(appleBox.getWeight());
-        System.out.println(orangeBox.getWeight());
-        System.out.println(appleBox2.getWeight());
+        System.out.println("Вес коробки: " + appleBox.getWeight() + "f");
+        System.out.println("Вес коробки: " + orangeBox.getWeight() + "f");
+        System.out.println("Вес коробки: " + appleBox2.getWeight() + "f");
 
         System.out.println(appleBox.compare(orangeBox));
 
         appleBox.transferFruits(appleBox2);
-        System.out.println(appleBox.getWeight());
-        System.out.println(appleBox2.getWeight());
+        System.out.println("Вес первой коробки: " + appleBox.getWeight() + "f");
+        System.out.println("Вес второй коробки: " + appleBox2.getWeight() + "f");
 
         // Тестирование задачи 2
 
@@ -68,7 +68,7 @@ public class TestClass {
 
     public static <T> void printArray (T[] arr) {
         for (T t : arr) {
-            System.out.println(t);
+            System.out.print(t + " ");
         }
     }
 
