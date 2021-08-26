@@ -17,7 +17,7 @@ public class PrintABC {
             for (int i = 0; i < 10; i++) {
                 try {
                     while (currentLetter != 'A') {
-                        monitor.wait(5000);
+                        monitor.wait();
                     }
                     System.out.println("A");
                     currentLetter = 'B';
@@ -36,7 +36,7 @@ public class PrintABC {
             for (int i = 0; i < 10; i++) {
                 try {
                     while (currentLetter != 'B') {
-                        monitor.wait(5000);
+                        monitor.wait();
                     }
                     System.out.println("B");
                     currentLetter = 'C';
@@ -54,7 +54,7 @@ public class PrintABC {
             for (int i = 0; i < 10; i++) {
                 try {
                     while (currentLetter != 'C') {
-                        monitor.wait(5000);
+                        monitor.wait();
                     }
                     System.out.println("C");
                     currentLetter = 'A';
